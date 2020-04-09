@@ -10,23 +10,18 @@ body {
 }
 
 .header {
-  background-color: #111926;
-  width: 100%;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  box-shadow: 2px 2px 5px #309091;
-  z-index: 999;
   font-size: 1.2em;
-  display: flex;
-
   font-family: "Raleway", sans-serif;
+  z-index: 999;
+  box-shadow: 2px 2px 5px #309091;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #111926;
+  height: 80px;
   font-weight: 400;
   color: white;
-  justify-content: center;
-  align-items: flex-start;
+
 }
 
 .header .logo {
@@ -34,43 +29,32 @@ body {
 }
 
 .header nav ul {
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
   list-style: none;
   overflow: hidden;
 }
 
 .header ul a {
   color: #ffffff;
-
   display: block;
   padding: 20px;
   text-decoration: none;
   text-align: center;
-}
-
-nav ul li a {
-  flex-direction: row;
-  display: inline-block;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
 }
 
-.header ul a:hover {
-  background-color: rgb(48, 144, 145, 0.2);
-  border-radius: 20px;
-  transition: ease-in-out 400ms;
-}
-
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 400ms ease-in-out;
+  transition: max-height 400ms ease-out;
 }
 
 .header .menu-icon {
   border: 2px;
-  margin: 0px 0px;
+  margin: 5px 5px;
   padding: 35px 35px;
   position: relative;
   float: right;
@@ -105,7 +89,7 @@ nav ul li a {
   display: block;
   position: absolute;
   top: -8px;
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease-out;
 }
 
 .header .menu-button {
@@ -115,11 +99,7 @@ nav ul li a {
 .header .menu-button:checked ~ .menu {
   max-height: 100vh;
   background-color: rgb(48, 144, 145, 0.8);
-  max-width: 100hw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: max-height 400ms ease-in-out;
+
 }
 
 .header .menu-button:checked ~ .menu-icon .nav-icon {
@@ -136,18 +116,24 @@ nav ul li a {
   top: 0;
 }
 
-@media (min-width: 100em) {
+@media (min-width: 90em) {
   .header {
     height: auto;
   }
 
   .header .logo {
     width: 300px;
+    margin-left: 15px;
+    margin-top: 5px;
   }
   .header li {
     float: left;
   }
-
+  .header ul a:hover {
+    background-color: rgb(48, 144, 145, 0.2);
+    border-radius: 20px;
+    transition: ease-in-out 400ms;
+  }
   .header li a {
     margin: 0;
     border: 0;
@@ -158,29 +144,53 @@ nav ul li a {
     clear: none;
     float: right;
     max-height: none;
+    margin-top: 20px;
+    margin-right: 10px;
   }
 
   .header .menu-icon {
     display: none;
+    border: 2px;
+    margin: 5px 5px;
   }
   .active {
     background-color: rgb(48, 144, 145, 0.1);
     border-radius: 20px;
   }
+
+  .header .menu-button:checked ~ .menu {
+    max-height: 100vh;
+    background-color: rgb(48, 144, 145, 0.8);
+    max-width: 100hw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: max-height 400ms ease-in-out;
+  }
 }
 
 body {
-  background-color: #111926;
+  background-color: #a3caca;
   color: #309091;
-  min-height: 100vh;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  border: 2000px;
+  display: grid;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-footer {
+
+
+.footer {
   font-family: "Raleway", sans-serif;
   bottom: 0;
   display: flex;
-  padding: 20px;
-  min-height: 30vh;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  min-height: 100px;
   width: 100%;
   background: #005e86;
   scroll-snap-align: start;
@@ -190,8 +200,12 @@ footer {
   font-size: 16px;
   background-color: #111926;
   color: #309091;
+  box-shadow: 5px 2px 5px #309091;
 }
 
-footer div {
+.footer-item {
   flex-direction: column;
+  margin-left: 10px;
+
+  
 }
