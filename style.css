@@ -174,7 +174,7 @@ body {
   color: #309091;
   height: auto;
   font-family: "Raleway", sans-serif;
-  border: 2000px;
+  border: 20px;
   display: grid;
   align-items: center;
   flex-direction: row;
@@ -187,7 +187,6 @@ body {
   font-family: "Raleway", sans-serif;
   bottom: 0;
   display: flex;
-  position: absolute;
   padding: 0px;
   margin: 0px;
   min-height: 100px;
@@ -203,9 +202,7 @@ body {
   box-shadow: 5px 2px 5px #309091;
 }
 
+
 .footer-item {
   flex-direction: column;
-  margin-left: 10px;
-
-  
 }
