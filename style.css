@@ -169,6 +169,19 @@ table {
   flex-direction: column;
 }
 
+.youtube {
+  padding: 5%;
+  border-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video {
+  padding-top: 50px;
+}
+
 .footer {
   font-family: "Raleway", sans-serif;
   bottom: 0;
