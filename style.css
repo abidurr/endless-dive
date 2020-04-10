@@ -7,7 +7,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #a3caca
+  background-color: #a3caca;
 }
 
 .header {
@@ -22,7 +22,6 @@ body {
   height: 80px;
   font-weight: 400;
   color: white;
-
 }
 
 .header .logo {
@@ -100,7 +99,6 @@ body {
 .header .menu-button:checked ~ .menu {
   max-height: 100vh;
   background-color: rgb(48, 144, 145, 0.8);
-
 }
 
 .header .menu-button:checked ~ .menu-icon .nav-icon {
@@ -117,15 +115,12 @@ body {
   top: 0;
 }
 
-
-
 .main {
   background-color: #a3caca;
   color: #309091;
   height: auto;
   font-family: "Raleway", sans-serif;
   border: 20px;
-
 }
 
 .splash {
@@ -136,14 +131,12 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding: 0;
-  align-items: ;
   text-align: center;
   color: #111926;
   font-weight: 600;
   text-shadow: 1px 1px white;
   line-height: 1.6;
 }
-
 
 .social-links {
   background-color: #111926;
@@ -157,7 +150,23 @@ body {
   box-shadow: 5px 2px 5px #309091;
 }
 
+.events {
+  padding-top: 150px;
+  text-align: center;
+}
 
+table {
+  padding: 10px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.songs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
 
 .footer {
   font-family: "Raleway", sans-serif;
@@ -176,10 +185,10 @@ body {
   background-color: #111926;
   color: #309091;
   box-shadow: 5px 2px 5px #309091;
-  margin:0px;
-  padding:0px;
-  min-width:100%;
-  max-width:100%;
+  margin: 0px;
+  padding: 0px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: 90em) {
@@ -242,7 +251,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 150px 200px 50px 200px;
-    align-items: ;
+    align-items: right;
     text-align: right;
     color: #111926;
     font-weight: 600;
@@ -250,5 +259,10 @@ body {
     line-height: 1.6;
   }
 
-
+  .songs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
 }
