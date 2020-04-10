@@ -162,10 +162,11 @@ table {
 }
 
 .songs {
+  margin: 5%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .footer {
@@ -260,9 +261,10 @@ table {
   }
 
   .songs {
+    margin: 5%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
